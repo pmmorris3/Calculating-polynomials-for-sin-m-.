@@ -37,7 +37,10 @@ class Sine:
 
 print("We claim sin(m°) is an algebraic number, whenever m  is an integer. Choose an m, and we will exhibit a polynomial over the rationals which sin(m°) satisfies.")
 m_in=int(input("Enter an integer for m: "))
-m = m_in % 180
+if m_in >= 0:
+	m = m_in % 360
+if m_in < 0:
+	m = m_in % -360
 listOfSines = []
 condensedSines = []
 for n in range(0,(90)//2+1):
