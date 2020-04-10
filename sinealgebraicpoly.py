@@ -70,36 +70,36 @@ if m %4 ==2 :
 		if x.power == 0:
 			print("2", " ")
 		elif x.coeff == 1:
-			print("+ %dsin(%dpi/180)^%d" % (x.coeff,m, x.power), " ")
+			print("+ %dsin(%d°)^%d" % (x.coeff,m, x.power), " ")
 
 		elif x.coeff < 0:
-			print("- %d*sin(%dpi/180)^%d" %(-x.coeff,m, x.power),  " ")
+			print("- %d*sin(%d°)^%d" %(-x.coeff,m, x.power),  " ")
 		else:
-			print("+ %d*sin(%dpi/180)^%d" %(x.coeff,m, x.power),  " ")
+			print("+ %d*sin(%d°)^%d" %(x.coeff,m, x.power),  " ")
 		sum += x.coeff*(Decimal(math.sin(x.arg)) ** Decimal(x.power))
 if m %4 ==0:
 	for x in condensedSines:
 		if x.power == 0:
 			continue
 		elif x.coeff == 1:
-			print("+ %dsin(%dpi/180)^%d" % (x.coeff,m, x.power), " ")
+			print("+ %dsin(%d°)^%d" % (x.coeff,m, x.power), " ")
 
 		elif x.coeff < 0:
-			print("- %d*sin(%dpi/180)^%d" %(-x.coeff,m, x.power),  " ")
+			print("- %d*sin(%d°)^%d" %(-x.coeff,m, x.power),  " ")
 		else:
-			print("+ %d*sin(%dpi/180)^%d" %(x.coeff,m, x.power),  " ")
+			print("+ %d*sin(%d°)^%d" %(x.coeff,m, x.power),  " ")
 		sum += x.coeff*(Decimal(math.sin(x.arg)) ** Decimal(x.power))
 if m %4 ==3 or (m % 4 == 1 and m != 1):
 	for x in condensedSines:
 		if x.power == 0:
 			print("1", " ")
 		elif x.coeff == 1:
-			print("+ %dsin(%dpi/180)^%d" % (x.coeff,m, x.power), " ")
+			print("+ %dsin(%d°)^%d" % (x.coeff,m, x.power), " ")
 
 		elif x.coeff < 0:
-			print("- %d*sin(%dpi/180)^%d" %(-x.coeff,m, x.power),  " ")
+			print("- %d*sin(%d°)^%d" %(-x.coeff,m, x.power),  " ")
 		else:
-			print("+ %d*sin(%dpi/180)^%d" %(x.coeff,m, x.power),  " ")
+			print("+ %d*sin(%d°)^%d" %(x.coeff,m, x.power),  " ")
 		sum += x.coeff*(Decimal(math.sin(x.arg)) ** Decimal(x.power))
 
 if m == 1:
@@ -107,12 +107,12 @@ if m == 1:
 		if x.power == 0:
 			print("1", " ")
 		elif x.coeff == 1:
-			print("+ %dsin(pi/180)^%d" % (x.coeff, x.power), " ")
+			print("+ %dsin(1°)^%d" % (x.coeff, x.power), " ")
 
 		elif x.coeff < 0:
-			print("- %d*sin(pi/180)^%d" %(-x.coeff, x.power),  " ")
+			print("- %d*sin(1°)^%d" %(-x.coeff, x.power),  " ")
 		else:
-			print("+ %d*sin(pi/180)^%d" %(x.coeff, x.power),  " ")
+			print("+ %d*sin(1°)^%d" %(x.coeff, x.power),  " ")
 		sum += x.coeff*(Decimal(math.sin(x.arg)) ** Decimal(x.power))
 
 
