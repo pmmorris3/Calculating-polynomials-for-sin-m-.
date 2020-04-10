@@ -123,3 +123,7 @@ if m % 4 == 2:
 
 print("= 0")
 print("\n"*10,"Using a precision of 60 digits, your computer approximates this as: \n",sum)
+print("\n")
+print("It turns out one needs only three distinct polynomials, depending on the remainder upon division of m by 4.")
+print("Curiously, in the case m % 4 == 1,3, the corresponding polynomial only has roots of the form sin(m°), each of multiplicity 1.")
+print("In other cases, there are an additional 24 (possibly degenerate) roots which need not be of this form.")
